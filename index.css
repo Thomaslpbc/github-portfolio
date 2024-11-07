@@ -381,8 +381,8 @@ body:not(.user-is-tabbing) a:focus {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 0;
-    right: 100%;
+    left: 100%;
+    right: 0;
     display: inline-block;
     height: 1rem;
     background: var(--white);
