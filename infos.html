@@ -334,15 +334,38 @@
             <p style="font-size: 0.9em;">
               Depuis quelques mois, je me suis découvert une nouvelle passion, la cuisine. Je prends plaisir à découvrir plein de nouvelles recettes.<br> <br> 
               Voici une liste de ce que j'ai pu cuisiné :<br> <br>
-              Beignets aux crevettes <br>Gnocchis lardons sauce fromagère <br>Poulet au curry avec du riz <br>Avocado toast saumon burrata  <br>Patês lardons chèvre miel <br>Wrap viande hachées poivrons vert sauce cheddar <br>Roulés pannées au poulet curry <br>Wrap saumon avocat philadelphia aneth <br>Wrap thon avocat  <br>Riz sauté oeuf et lardon <br>Tacos <br>Crême au citron <br>Tiramisu spéculos café.  <br>
+              Beignets aux crevettes <br>Gnocchis lardons sauce fromagère <br>Poulet au curry avec du riz <br>Avocado toast saumon burrata  <br>Patês lardons chèvre miel <br>Wrap viande hachées poivrons vert sauce cheddar <br>Roulés pannées au poulet curry <br>Wrap saumon avocat philadelphia aneth <br>Cookies <br>Riz sauté oeuf et lardon <br>Tacos <br>Crême au citron <br>Tiramisu spéculos café.  <br>
             </p>
 
           </div>
 
           <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/Thomas.jpg" alt="" />
+            <img class="about__photo" id="photo" src="./images/avocado.jpg" alt="Photo de Thomas" />
+            <script>
+              // Tableau d'images
+              const images = [
+                "./images/avocado.jpg",
+                "./images/wrap.jpg",
+                "./images/curryroll.jpg",
+                "./images/cookie.jpg",
+                "./images/Shramp.jpg",
+                "./images/rice.jpg"
+              ];
+            
+              let currentIndex = 0;
+            
+              // Fonction pour changer l'image
+              function changeImage() {
+                const photoElement = document.getElementById("photo");
+                currentIndex = (currentIndex + 1) % images.length; // Boucle sur les images
+                photoElement.src = images[currentIndex];
+              }
+            
+              // Change l'image toutes les 5 secondes (5000 ms)
+              setInterval(changeImage, 5000);
+            </script>
           </div>
+          
         </div>
       </div>
   </section>
@@ -402,7 +425,7 @@
 
           <div class="about__photo-container">
             <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/Thomas.jpg" alt="" />
+            <img class="about__photo" src="./images/photographier.jpg" alt="" />
           </div>
         </div>
       </div>
