@@ -179,7 +179,6 @@ p {
 }
 
 
-
 a {
     color: var(--white);
     font-weight: 400;
@@ -291,7 +290,6 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 
-
 .back-to-top {
     position: fixed;
     bottom: 4rem;
@@ -323,6 +321,7 @@ body:not(.user-is-tabbing) a:focus {
         right: 1rem;
     }
 }
+
 
 
 .nav {
@@ -425,7 +424,6 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 
-
 .work__box {
     display: flex;
     align-items: center;
@@ -458,7 +456,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__list {
-    
+
     list-style-position: inside;
     margin-bottom: var(--gutter-normal);
 }
@@ -515,6 +513,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 
+
 .about__content {
     display: flex;
     flex-direction: row-reverse;
@@ -548,7 +547,6 @@ body:not(.user-is-tabbing) a:focus {
 .contact__info {
     max-width: var(--container-medium-width);
 }
-
 
 
 .footer {
