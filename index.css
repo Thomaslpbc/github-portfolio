@@ -494,12 +494,35 @@ body:not(.user-is-tabbing) a:focus {
 .client__logos {
     display: flex;
     justify-content: space-between;    
+    overflow-x: auto; /* Active le défilement horizontal uniquement si nécessaire */
+    scrollbar-width: thin; /* Réduit la taille de la scrollbar sur Firefox */
+    scrollbar-color: #24b3f1 transparent; /* Couleur de la barre et du fond sur Firefox */
+}
+
+/* Personnalisation de la scrollbar pour Chrome, Edge et Safari */
+.client__logos::-webkit-scrollbar {
+    height: 6px; /* Hauteur de la barre discrète */
+}
+
+.client__logos::-webkit-scrollbar-track {
+    background: transparent; /* Fond invisible */
+}
+
+.client__logos::-webkit-scrollbar-thumb {
+    background: #24b3f1; /* Bleu électrique */
+    border-radius: 10px;
+}
+
+.client__logos::-webkit-scrollbar-thumb:hover {
+    background: #24b3f1; /* Changement de couleur au survol */
 }
 
 .client__logo {
     height: 19.5rem;
     max-width: 20rem;
+    flex-shrink: 0; /* Empêche les logos de se réduire si l'espace manque */
 }
+
 
 @media(max-width: 1240px) {
     .client__logos {
